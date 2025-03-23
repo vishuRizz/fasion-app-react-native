@@ -1,21 +1,41 @@
 {
   "expo": {
-    "name": "real-estate",
-    "slug": "real-estate",
+    "name": "lent-it",
+    "slug": "lent-it",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "lent-it-schema",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.lentit",
+      "associatedDomains": ["applinks:lent-it.yourcompany.com"]
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yourcompany.lentit",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "lent-it-schema"
+            },
+            {
+              "scheme": "https",
+              "host": "*.supabase.co",
+              "pathPrefix": "/auth/v1/callback"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -47,7 +67,6 @@
         }
       ]
     ],
-    
     "experiments": {
       "typedRoutes": true
     }
