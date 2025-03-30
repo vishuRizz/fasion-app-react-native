@@ -32,11 +32,6 @@ metro-cache/
 .expo-shared/
 
 # Environment variables
-.env
-.env.local
-.env.development
-.env.production
-.env.test
 .env.*.local
 
 # macOS system files
@@ -92,3 +87,4 @@ ios/GoogleService-Info.plist
 *.apk
 *.aab
 *.ipa
+config.bat
