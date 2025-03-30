@@ -59,7 +59,7 @@ const HomeScreen = () => {
         
         {/* Search Bar */}
         <View className="flex-row items-center bg-gray-100 mx-4 rounded-xl px-3.5 my-3.5">
-          <Icon name="search" size={28} color="#888" className="mr-3" />
+          <Icon name="search" size={28} color="#888" style={{ marginRight: 12 }} />
           <TextInput
             placeholder="Search Trends..."
             className="flex-1 h-12 text-black"
@@ -71,7 +71,7 @@ const HomeScreen = () => {
         <View className="flex px-4 py-3">
           <View className="flex-row">
             {/* Rent Card */}
-            <TouchableOpacity className="w-[48%] h-[95%] aspect-square">
+            <TouchableOpacity className="w-[48%] h-[100%] aspect-square">
               <View className="flex-1 h-[95%] rounded-sm bg-[#e6f2f2] justify-center items-center overflow-hidden">
                 <Image
                   source={require('@/assets/images/rent.png')}

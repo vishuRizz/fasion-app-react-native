@@ -15,6 +15,13 @@ export default function Index() {
      <Link href="/explore">Explore</Link>
      <Link href="/profile">profile</Link>
      <Link href="/home">home</Link>
+    <Link href="/checkout">checkout</Link>
+    <Link href="/promo">promo</Link>
+    <Link href="/delivery">delivery</Link>
+    <Link href="/payement">payement</Link>
+      
+    
+    
     </View>
   );
 }
