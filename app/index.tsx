@@ -19,6 +19,9 @@ export default function Index() {
     <Link href="/promo">promo</Link>
     <Link href="/delivery">delivery</Link>
     <Link href="/payement">payement</Link>
+    <Link href="/product">product</Link>
+    
+    
       
     
     
